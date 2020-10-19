@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Excel办公实战</title>
   
   
   <link href="http://yianxss.github.io/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://yianxss.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>小易</name>
     
   </author>
   
