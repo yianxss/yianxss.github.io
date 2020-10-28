@@ -6,7 +6,7 @@
   <link href="http://yianxss.github.io/atom.xml" rel="self"/>
   
   <link href="http://yianxss.github.io/"/>
-  <updated>2020-10-28T16:15:33.393Z</updated>
+  <updated>2020-10-28T17:29:48.314Z</updated>
   <id>http://yianxss.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yianxss.github.io/2020/10/29/power-querym-han-shu-ji-chu-ji-shang-xia-wen-xiang-jie/"/>
     <id>http://yianxss.github.io/2020/10/29/power-querym-han-shu-ji-chu-ji-shang-xia-wen-xiang-jie/</id>
     <published>2020-10-28T16:09:16.000Z</published>
-    <updated>2020-10-28T16:15:33.393Z</updated>
+    <updated>2020-10-28T17:29:48.314Z</updated>
     
     
       
@@ -34,51 +34,10 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>PQ实战 | 快速找出差异数据，数据变动及时更新</title>
-    <link href="http://yianxss.github.io/2020/10/24/chuang-jian-xin-wen-zhang/"/>
-    <id>http://yianxss.github.io/2020/10/24/chuang-jian-xin-wen-zhang/</id>
-    <published>2020-10-23T17:54:31.000Z</published>
-    <updated>2020-10-24T13:11:12.151Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本次案例根据实际情场景改编，一定程度上体现了PQ的高效数据清洗和核对能力！也算是一个真正实际应用过程中的M函数书写展示！&lt;br&gt;​&lt;/p&gt;
-&lt;h2 id=&quot;业务场景&quot;&gt;&lt;a href=&quot;#业务场景&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
+    <category term="PQ基础" scheme="http://yianxss.github.io/categories/PQ%E5%9F%BA%E7%A1%80/"/>
     
     
     <category term="PQ" scheme="http://yianxss.github.io/tags/PQ/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yianxss.github.io/2020/10/19/hello-world/"/>
-    <id>http://yianxss.github.io/2020/10/19/hello-world/</id>
-    <published>2020-10-19T15:19:53.409Z</published>
-    <updated>2020-10-19T15:19:53.409Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   

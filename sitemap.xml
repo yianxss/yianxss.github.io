@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yianxss.github.io/2020/10/29/power-querym-han-shu-ji-chu-ji-shang-xia-wen-xiang-jie/</loc>
+    
+    <lastmod>2020-10-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yianxss.github.io/tags/index.html</loc>
     
     <lastmod>2020-10-28</lastmod>
@@ -12,20 +19,6 @@
     <loc>http://yianxss.github.io/categories/index.html</loc>
     
     <lastmod>2020-10-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yianxss.github.io/2020/10/29/power-querym-han-shu-ji-chu-ji-shang-xia-wen-xiang-jie/</loc>
-    
-    <lastmod>2020-10-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yianxss.github.io/2020/10/24/chuang-jian-xin-wen-zhang/</loc>
-    
-    <lastmod>2020-10-24</lastmod>
     
   </url>
   
@@ -85,13 +78,6 @@
     
   </url>
   
-  <url>
-    <loc>http://yianxss.github.io/2020/10/19/hello-world/</loc>
-    
-    <lastmod>2020-10-19</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>http://yianxss.github.io/</loc>
@@ -109,5 +95,12 @@
   </url>
   
 
+  
+  <url>
+    <loc>http://yianxss.github.io/categories/PQ%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2020-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
