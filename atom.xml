@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Excel办公实战</title>
   
-  
+  <subtitle>分享函数、技巧、VBA、PBI、Power Query等</subtitle>
   <link href="http://yianxss.github.io/atom.xml" rel="self"/>
   
   <link href="http://yianxss.github.io/"/>
