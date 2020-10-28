@@ -1,50 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Power QueryM函数基础及上下文详解</title>
+    <url>/2020/10/29/power-querym-han-shu-ji-chu-ji-shang-xia-wen-xiang-jie/</url>
+    <content><![CDATA[<p><img src="https://i.loli.net/2020/10/29/RbnIGFztUKOxCNi.png" alt="PQ 第三期  M函数基础及上下文详解_美编助手.png"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/10/19/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
 <p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
     <title>PQ实战 | 快速找出差异数据，数据变动及时更新</title>
-    <url>/2020/10/24/%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E7%AB%A0/</url>
+    <url>/2020/10/24/chuang-jian-xin-wen-zhang/</url>
     <content><![CDATA[<p>本次案例根据实际情场景改编，一定程度上体现了PQ的高效数据清洗和核对能力！也算是一个真正实际应用过程中的M函数书写展示！<br>​</p>
-<p>业务场景</p>
-<p>业务场景：分公司A和分公司B距离较近，经常发生交叉签单的情况，发生这种情况，需要在实际签单公司登记，最后合并到一起计算！在合并数据时，为了确保准确性，使用姓名和身份证号码作为条件！避免重名或者同人身份照号码录入不一致导致的错误！但是这种情况下，一般遇到姓名或者身份证号码录入错误就无法准确合并，所以我们要找出同名但身份证号码不同的数据进行核实是否同一人，以及身份照号相同姓名不同的数据！</p>
+<h2 id="业务场景"><a href="#业务场景" class="headerlink" title="业务场景"></a>业务场景</h2><p>业务场景：分公司A和分公司B距离较近，经常发生交叉签单的情况，发生这种情况，需要在实际签单公司登记，最后合并到一起计算！在合并数据时，为了确保准确性，使用姓名和身份证号码作为条件！避免重名或者同人身份照号码录入不一致导致的错误！但是这种情况下，一般遇到姓名或者身份证号码录入错误就无法准确合并，所以我们要找出同名但身份证号码不同的数据进行核实是否同一人，以及身份照号相同姓名不同的数据！</p>
 <p>模拟数据如下：一人可能有多条数据</p>
-<p>找出姓名同身份照号不同的数据</p>
-<p>加载进入PQ等基础，这里就不再介绍，不懂的同学，可以看一下<br>PQ入门第一期：PQ 第一期 | Power Query是什么？怎么学？</p>
+<h3 id="找出姓名同身份照号不同的数据"><a href="#找出姓名同身份照号不同的数据" class="headerlink" title="找出姓名同身份照号不同的数据"></a>找出姓名同身份照号不同的数据</h3><p>加载进入PQ等基础，这里就不再介绍，不懂的同学，可以看一下<br>PQ入门第一期：PQ 第一期 | Power Query是什么？怎么学？</p>
 <p>先说一下处理思路：<br>按照姓名分组，因为一个人可能有多条件记录，所以分组后，我们需要对身份号去重，对于不重复值，我们还要看是哪一个分公司的，后续沟通处理，所以我们需要对去重的身份证号和公司名称拼接一下，放在一个单元格中！</p>
 <p>具体操作如下：</p>
-<p>01 |  按照姓名分组处理</p>
-<p>= Table.Group(源,”姓名”,{“res”,each _})</p>
+<h3 id="01-按照姓名分组处理"><a href="#01-按照姓名分组处理" class="headerlink" title="01 |  按照姓名分组处理"></a>01 |  按照姓名分组处理</h3><pre class=" language-vb"><code class="language-vb">= Table.Group(源,"姓名",{"res",each _})</code></pre>
 <p>姓名相同的数据会聚合到一起形成Table,后续我们对这个table进行处理！</p>
-<p>02 | 去重找异常</p>
-<p>看上去是不是有点有点多有点复杂，其实这就是我一般在实际使用过程中的基本常态！所以不用担心，只要我们思路清晰，非常简单！</p>
+<h3 id="02-去重找异常"><a href="#02-去重找异常" class="headerlink" title="02 | 去重找异常"></a>02 | 去重找异常</h3><p>看上去是不是有点有点多有点复杂，其实这就是我一般在实际使用过程中的基本常态！所以不用担心，只要我们思路清晰，非常简单！</p>
 <p>格式化一下方便我们解读：</p>
 <p>代码思路解读：<br>1、相同姓名在不同分公司或者相同分公司都有可能有多条数据，所以我们第一步考虑把身份证号和分公司（名称）这两列提取出来，然后去重，Table.SelectColumns 名字够直接了，就是选取列！多列使用list即可！不要告诉我你不知道什么是list(查看入门第二期)，去重Table.Distinct，也够直接，不用多讲，这里使用Record包裹，是因为我们后面还需要使用到【提取两列】这个过度表，这样就不用重复写，直接使用！未来也可以使用let …… in 结构！</p>
 <p>2、上一步去重后，可以排除掉重复的数据，但是一个人只要在两个公式都出现就有会两条记录，所以我们还要对身份证号去重，正常情况下一个人一个身份证号码，结果肯定是一条，所以我们最后要的结果就是 去重身份证号码个数大于1 且 身份证号和分公司去重 行数 大于1</p>
 <p>3、找出这些满足条件的数据，结果是两列，我们希望先号码和分公司合并,然后再 每一行合并，放在一个单元格，这里的#(lf)表示换行符,PQ中特殊符号或者系统自带的一般都使用#开头 比如#shared，#table构建比较等。<br>Text.Combine大家比较熟悉了，使用分隔符合并两个文本！</p>
-<p>03 | 排除空值，得到结果</p>
-<p>最后筛选 不等于空的结果！其实这一步也可以直接合并到上面一步搞定！</p>
+<h3 id="03-排除空值，得到结果"><a href="#03-排除空值，得到结果" class="headerlink" title="03 | 排除空值，得到结果"></a>03 | 排除空值，得到结果</h3><p>最后筛选 不等于空的结果！其实这一步也可以直接合并到上面一步搞定！</p>
 <p>04 | 修改数据，刷新动态更新</p>
 <p>全部源码：（左右滑动查看或者复制到PQ编辑器）<br>let<br>    源 = Excel.CurrentWorkbook(){[Name=”表1”]}[Content],<br>    自定义1 = Table.Group(<br>        源,”姓名”,<br>            {“res”,each<br>                [提取两列 = Table.SelectColumns(_,{“身份证号码”,”分公司”}),<br>                号码去重 = List.Count(List.Distinct([身份证号码])),<br>                两列去重 = Table.Distinct(提取两列),<br>                结果=<br>                    if Table.RowCount(两列去重)&gt;1 and  号码去重 &gt;1 then<br>                        Text.Combine(<br>                            List.Transform(Table.ToRows(两列去重),<br>                                    (x)=&gt;Text.Combine(x,”:”))<br>                                ,”#(lf)”<br>                            )<br>                    else “”<br>                ][结果]</p>
-<pre><code>        &#125;
+<pre><code>        }
     ),
-筛选的行 = Table.SelectRows(自定义1, each ([res] &lt;&gt; &quot;&quot;))</code></pre>
+筛选的行 = Table.SelectRows(自定义1, each ([res] &lt;&gt; ""))</code></pre>
 <p>in<br>    筛选的行</p>
 <p>为了大家理解方便，我们代码中大部分变量都使用的中文，实际情况，大家可以根据习惯来，个人开发，可读性也可以适当往前靠靠，方便维护！</p>
 <p>身份证相同姓名不同</p>
